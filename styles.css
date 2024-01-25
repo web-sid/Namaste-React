@@ -1,11 +1,134 @@
-#heading {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#child {
-  color: green;
+.head {
+  display: flex;
+  justify-content: space-between;
 }
 
-#childs {
-  color: red;
+.logo {
+  width: 100px;
+  height: 100px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.nav-links > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul > li > img {
+  width: 20px;
+  height: 20px;
+  background-blend-mode: color-burn;
+}
+
+ul > li {
+  font-size: 24px;
+  padding: 30px 25px;
+  margin: 0 25px;
+  cursor: pointer;
+}
+.search {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.search > input {
+  width: 25%;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  border: none;
+  margin-right: 20px;
+  outline: none;
+}
+.search > button {
+  width: 85px;
+  padding: 7px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: #d24545;
+  color: white;
+}
+.body {
+  background-color: #f5eee6;
+}
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.res-card {
+  width: 240px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+.logo-cont {
+  display: flex;
+  align-items: center;
+}
+
+.res-logo {
+  width: 16rem;
+  height: 15rem;
+  border-radius: 20px;
+}
+.res-logo:hover {
+  width: 15rem;
+  height: 14rem;
+
+  transition: all 0.8s;
+}
+
+.rating-logo {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 8px;
+  left: 3px;
+}
+.rating-num {
+  position: relative;
+  right: 15px;
+  margin-top: 0;
+}
+
+h4 > span {
+  margin: 0px 5px;
+  font-weight: 900;
+}
+
+h4 {
+  margin: 8px 3px;
+}
+h3 {
+  margin-top: 5px;
+}
+h2 {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+.topPick-btn {
+  padding: 8px;
+  margin: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  background-color: #d24545;
+}
+
+.topPick-btn:hover {
+  background-color: #f86161;
 }

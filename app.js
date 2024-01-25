@@ -1,15 +1,16 @@
-const headings = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is h1 tag"),
-    React.createElement("h2", {}, "This is h2 tag"),
-  ]),
-  React.createElement("div", { id: "parents" }, [
-    React.createElement("div", { id: "childs" }, [
-      React.createElement("h1", {}, "This is h1 tag"),
-      React.createElement("h2", {}, "This is h2 tag"),
-    ]),
-  ]),
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Header from "./src/Components/Header";
+import Body from "./src/Components/Body";
 
-const roots = ReactDOM.createRoot(document.getElementById("containers"));
-roots.render(headings);
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
